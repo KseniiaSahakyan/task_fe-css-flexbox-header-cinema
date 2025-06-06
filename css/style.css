@@ -2,13 +2,8 @@ body {
   margin: 0;
 }
 
-main {
-  width: 400vh;
-}
-
 header {
-  display: flex
-  ;
+  display: flex;
 }
 
 .banner {
@@ -16,11 +11,28 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 0;
-  width: 3800px;
-  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  z-index: 0;
   position: relative;
+  gap: 30px;
+}
+
+.container {
+  gap: 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  opacity: 0.5;
+}
+
+.container:hover {
+  opacity: 1;
 }
 
 .logo {
@@ -29,29 +41,53 @@ header {
   width: 328px;
   height: 72px;
   margin: 0;
-}
-
-.oscar {
-  background-image: url("./oscar.svg");
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  padding-right: 20px;
   background-repeat: no-repeat;
-  margin: 0;
-
+  padding-right: 10px;
 }
 
 .play {
   background-image: url("./play.svg");
   z-index: 1;
-  width: 20px;
-  height: 20px;
-  padding-right: 20px;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.oscar {
+  background-image: url("./oscar.svg");
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 20px;
   background-repeat: no-repeat;
   margin: 0;
 }
 
 .icon {
   color: white;
+  padding-bottom: 20px;
+  flex-direction: row;
+  padding-right: 20px;
+  font-size: xx-large;
+}
+
+.input {
+  width: 160px;
+  height: 40px;
+  padding-bottom: 20px;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.input:hover {
+  opacity: 1;
+}
+
+.input input {
+  font-size: x-large;
+  padding: 5px;
+  border-radius: 5px;
 }
